@@ -1,0 +1,21 @@
+    
+  
+  .carousel-content {
+    flex-grow: 1; /* Allow the content to grow to fill the remaining space */
+    display: flex;
+    overflow-x: hidden; /* Hide any overflow */
+  }
+  .carousel-overlay-left,
+.carousel-overlay-right {
+  transition: opacity 0.3s ease-in-out; /* Add a smooth fade transition */
+  pointer-events: none; /* Allow interaction with buttons behind the overlay */
+}
+
+.carousel-overlay-left {
+  background: linear-gradient(to left, rgba(255, 255, 255, 0));
+}
+
+.carousel-overlay-right {
+  background: linear-gradient(to right, rgba(255, 255, 255, 0),);
+}
+  
